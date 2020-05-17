@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+.demo{
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    left: 50%;
+    top: 50%;
+    /* border: 1px solid black; */
+    margin-left: -265px;
+    margin-top: -265px;
+}
+.pic1,
+.pic2,
+.pic3{
+    position: absolute;
+    width: 530px;
+    height: 530px;
+}
+.pic1{
+    animation: changeright 6s linear infinite;
+}
+.pic2{
+    animation: changeright 6s linear infinite;
+}
+.pic3{
+    animation: changelift 6s linear infinite;
+}
+@keyframes changeright{
+    0%{
+        transform:rotate(0deg);}
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes changelift{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
